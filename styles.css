@@ -1,7 +1,83 @@
+html{
+    box-sizing: border-box;
+}
 
+*, *::after, *::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: "Hanken Grotesk", sans-serif;
+}
 
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(221, 100%, 96%);
+}
 
+.card{
+    box-shadow: rgba(0, 0, 0, .25) 0px 5px 10px;
+    border-radius: 2rem;
+    width: 650px;
+    background-color: white;
+}
 
+.card-container{
+    display: flex;
+    justify-content: space-between;
+}
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.your-result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    width:50%;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 2rem;
+    gap: 1rem;
+}
+
+.your-result .title{
+    color: hsl(241, 100%, 89%);
+    /* margin-bottom: 1rem; */
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px 0;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+}
+
+.circle h1{
+    color: white;
+    font-size: 3.5rem;
+}
+
+.circle p{
+    color: hsl(241, 100%, 89%);
+    font-size: 0.9rem;
+}
+
+.your-result .message-head{
+    color: white;
+    font-size: 1.7rem;
+}
+
+.your-result .message{
+    color:hsl(241, 100%, 89%);
+    width: 80%;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
