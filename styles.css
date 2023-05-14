@@ -169,3 +169,26 @@ body{
     background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
+@media (max-width: 650px){
+
+    body{
+        align-items: flex-start;
+    }
+
+    .card{
+        box-shadow: none;
+    }
+
+    .card-container{
+        flex-direction: column;
+    }
+
+    .your-result{
+        width: 100%;
+        border-radius: 0 0 2rem 2rem;
+    }
+
+    .summary{
+        width: 100%;
+    }
+}
